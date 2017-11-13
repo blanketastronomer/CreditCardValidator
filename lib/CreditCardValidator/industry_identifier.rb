@@ -10,6 +10,10 @@ module CreditCardValidator
           return "AIRLINES/FINANCIAL/FUTURE"
         when 3
           return "TRAVEL/ENTERTAINMENT"
+        when 4
+          return "BANKING/FINANCIAL"
+        when 5
+          return "BANKING/FINANCIAL"
       end
     end
   end
