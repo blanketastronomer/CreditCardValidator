@@ -8,6 +8,8 @@ module CreditCardValidator
           return 'AIRLINES'
         when 2
           return "AIRLINES/FINANCIAL/FUTURE"
+        when 3
+          return "TRAVEL/ENTERTAINMENT"
       end
     end
   end
