@@ -16,6 +16,8 @@ module CreditCardValidator
           return "BANKING/FINANCIAL"
         when 6
           return "MERCHANDISING/BANKING/FINANCIAL"
+        when 7
+          return "PETROLEUM/FUTURE"
       end
     end
   end
