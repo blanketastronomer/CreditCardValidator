@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["blanketastronomer@users.noreply.github.com"]
 
   spec.summary       = %q{A simple credit card validator.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/blanketastronomer/CreditCardValidator"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
