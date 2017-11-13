@@ -6,6 +6,8 @@ module CreditCardValidator
       case iin
         when 1
           return 'AIRLINES'
+        when 2
+          return "AIRLINES/FINANCIAL/FUTURE"
       end
     end
   end
