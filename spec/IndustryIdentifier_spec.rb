@@ -9,6 +9,7 @@ RSpec.describe CreditCardValidator::IndustryIdentifier do
   let :merchandising_number { rand(600000000000000..699999999999999) }
   let :petroleum_number { rand(700000000000000..799999999999999) }
   let :healthcare_telecom_number { rand(800000000000000..899999999999999) }
+  let :national_standards_number { rand(900000000000000..999999999999999) }
 
   describe "#industry" do
     it "matches the airline industry" do
@@ -37,6 +38,10 @@ RSpec.describe CreditCardValidator::IndustryIdentifier do
 
     it "matches the healthcare, telecom, and other future industries" do
       expect(identifier.industry(healthcare_telecom_number)).to eq("HEALTHCARE/TELECOM/FUTURE")
+    end
+
+    it "matches national standards bodies" do
+      expect(identifier.industry(national_standards_number)).to eq("NATIONAL_STANDARDS_BODY")
     end
   end
 end

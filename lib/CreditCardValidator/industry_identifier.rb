@@ -20,6 +20,8 @@ module CreditCardValidator
           return "PETROLEUM/FUTURE"
         when 8
           return "HEALTHCARE/TELECOM/FUTURE"
+        when 9
+          return "NATIONAL_STANDARDS_BODY"
       end
     end
   end
